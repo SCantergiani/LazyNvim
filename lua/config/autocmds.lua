@@ -11,7 +11,7 @@ vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
   pattern = "*.env",
   callback = function()
     -- Disable diagnostics for the current buffer
-    vim.diagnostic.enable(false)
+    vim.diagnostic.enable(false, { bufnr = 0 })
   end,
   desc = "Disable linting for .env files",
 })
