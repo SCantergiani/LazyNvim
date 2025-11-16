@@ -7,7 +7,7 @@
 -- +---------------------------------------------------------+
 local set = vim.keymap.set
 
-set("n", "<leader>r", function()
+set("n", "<leader>rr", function()
   local filetype = vim.bo.filetype
   local file = vim.fn.expand("%:p")
   local cmd

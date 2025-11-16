@@ -3,17 +3,14 @@ return {
     "neovim/nvim-lspconfig",
     opts = {
       servers = {
-        pyright = {
+        -- Disable Pyright completely
+        pyright = false,
+
+        -- Keep ty configuration
+        ty = {
           settings = {
-            pyright = {
-              -- Using Ruff's import organizer
-              disableOrganizeImports = true,
-            },
-            python = {
-              analysis = {
-                -- Ignore all files for analysis to exclusively use Ruff for linting
-                ignore = { "*" },
-              },
+            ty = {
+              inlayHints = { variableTypes = false },
             },
           },
         },
