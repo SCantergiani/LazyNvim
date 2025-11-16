@@ -7,15 +7,17 @@ return {
       "neovim/nvim-lspconfig",
       { "nvim-telescope/telescope.nvim", branch = "master", dependencies = { "nvim-lua/plenary.nvim" } }, -- optional: you can also use fzf-lua, snacks, mini-pick instead.
     },
-    ft = "python", -- Load when opening Python files
+    ft = { "python" }, -- Load when opening Python files
     keys = {
       { ",v", "<cmd>VenvSelect<cr>" }, -- Open picker on keymap
     },
     opts = { -- this can be an empty lua table - just showing below for clarity.
-      search = {}, -- if you add your own searches, they go here.
       options = {
         activate_venv_in_terminal = true,
       }, -- if you add plugin options, they go here.
+      search = {
+        virtualenvs = false,
+      },
     },
   },
   {
