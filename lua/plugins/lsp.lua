@@ -11,6 +11,9 @@ return {
           settings = {
             ty = {
               inlayHints = { variableTypes = false },
+              experimental = {
+                rename = true,
+              },
             },
           },
         },
