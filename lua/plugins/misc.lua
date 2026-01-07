@@ -1,6 +1,11 @@
 return {
   { "LudoPinelli/comment-box.nvim", verison = "*" },
   {
+    "christopher-francisco/tmux-status.nvim",
+    lazy = true,
+    opts = {},
+  },
+  {
     "linux-cultist/venv-selector.nvim",
     branch = "main",
     dependencies = {
