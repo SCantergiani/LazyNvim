@@ -7,3 +7,4 @@
 vim.g.lazyvim_python_lsp = "ty"
 -- Set to "ruff_lsp" to use the old LSP implementation version.
 vim.g.lazyvim_python_ruff = "ruff"
+vim.g.python3_host_prog = "~/.venvs/neovim/bin/python"
